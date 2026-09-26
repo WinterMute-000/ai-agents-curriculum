@@ -1,10 +1,15 @@
 import anthropic
 import json
 import math
+import sys
+from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env", override=True)
+
+# Windows consoles default to cp1252, which can't print the box/emoji characters below
+sys.stdout.reconfigure(encoding="utf-8")
 
 client = anthropic.Anthropic()
 
