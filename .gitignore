@@ -14,6 +14,9 @@ env/
 dist/
 build/
 
+# Agent runtime data (memory store, generated digests)
+capstone/data/
+
 # OS
 .DS_Store
 Thumbs.db

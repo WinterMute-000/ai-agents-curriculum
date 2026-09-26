@@ -1,0 +1,22 @@
+# What the digest agent researches. Edit freely — this is your digest.
+
+[digest]
+reader = "An engineer learning to build production AI agents; knows Python and GCP."
+lookback_days = 2        # how far back counts as "new"
+max_items_per_topic = 5
+
+[[topics]]
+name = "AI agents"
+focus = "New agent architectures, patterns, and notable open-source agent projects."
+
+[[topics]]
+name = "Model Context Protocol"
+focus = "Spec changes, notable MCP servers and clients, adoption news."
+
+[[topics]]
+name = "Claude & Anthropic API"
+focus = "New models, API features, SDK releases, pricing changes."
+
+[[topics]]
+name = "Google Cloud for AI"
+focus = "Cloud Run, Vertex AI, and GCP releases relevant to deploying agents."

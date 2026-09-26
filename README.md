@@ -2,17 +2,16 @@
 
 Hands-on code exercises from a structured deep dive into AI agents, agentic architectures, and production deployment patterns.
 
-## Table of Contents
+The curriculum builds one real system end to end: a **research digest agent** that researches chosen topics daily, remembers what it has already reported, and runs on GCP. See [CURRICULUM.md](./CURRICULUM.md) for the full plan.
 
-| Session | Topic |
-|---------|-------|
-| [Session 1-2](./session-1-2/) | Tool Use & Function Calling |
-| [Session 1-3](./session-1-3/) | Prompt Engineering for Agents |
-| [Session 1-4](./session-1-4/) | Memory & State |
-| [Session 2-1](./session-2-1/) | Single-Agent Architectures |
-| [Session 2-2](./session-2-2/) | Multi-Agent Systems |
-| [Session 2-3](./session-2-3/) | Frameworks Deep Dive |
-| [Session 2-4](./session-2-4/) | MCP & Agent Infrastructure |
+## Layout
+
+| Path | What's there |
+|------|--------------|
+| [CURRICULUM.md](./CURRICULUM.md) | The 4-hour plan: 8 blocks, checkpoints |
+| [labs/](./labs/) | Small by-hand exercises, one folder per block |
+| [capstone/](./capstone/) | The digest agent — grows with every block |
+| [session-1-2/](./session-1-2/) | Earlier work: tool use & a manual agentic loop |
 
 ## Setup
 
@@ -20,5 +19,6 @@ Hands-on code exercises from a structured deep dive into AI agents, agentic arch
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env       # then fill in your API keys
+cp .env.example .env       # then fill in your API key
+python -m capstone.digest.config   # sanity check
 ```
